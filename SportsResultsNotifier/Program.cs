@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using SportsResultsNotifier;
+
+WebScraper basketBallScraper = new(new Uri("https://www.basketball-reference.com/boxscores/"));
+basketBallScraper.GetData();
